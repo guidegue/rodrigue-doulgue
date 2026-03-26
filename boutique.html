@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Rodrigue DOULGUE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">Rodrigue DOULGUE<span>Expert en Marketing Relationnel</span></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+    <h1>🛍️ Boutique</h1>
+    <p>Découvrez nos produits et ressources pour booster votre marketing</p>
+</section>
+<main>
+    <div class="section">
+        <div class="filtre-buttons">
+            <button class="filtre-btn active" onclick="filtrer('tous')">Tous</button>
+            <button class="filtre-btn" onclick="filtrer('livres')">📚 Livres</button>
+            <button class="filtre-btn" onclick="filtrer('formations')">🎓 Formations</button>
+            <button class="filtre-btn" onclick="filtrer('outils')">🛠️ Outils</button>
+        </div>
+        <div class="produits-grid" id="produits-grid">
+            <div class="carte-produit" data-cat="livres">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400" alt="Livre Marketing">
+                <div class="produit-info">
+                    <span class="badge">📚 Livre</span>
+                    <h3>Guide du Marketing Relationnel</h3>
+                    <p>Le guide complet pour démarrer et réussir dans le marketing relationnel.</p>
+                    <span class="prix">15 000 FCFA</span>
+                    <a href="https://wa.me/237689085020?text=Je veux commander: Guide du Marketing Relationnel" class="btn btn-whatsapp" target="_blank">Commander</a>
+                </div>
+            </div>
+            <div class="carte-produit" data-cat="livres">
+                <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400" alt="Stratégies">
+                <div class="produit-info">
+                    <span class="badge">📚 Livre</span>
+                    <h3>100 Stratégies de Vente</h3>
+                    <p>Découvrez 100 stratégies éprouvées pour augmenter vos ventes.</p>
+                    <span class="prix">20 000 FCFA</span>
+                    <a href="https://wa.me/237689085020?text=Je veux commander: 100 Stratégies de Vente" class="btn btn-whatsapp" target="_blank">Commander</a>
+                </div>
+            </div>
+            <div class="carte-produit" data-cat="formations">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400" alt="Formation">
+                <div class="produit-info">
+                    <span class="badge">🎓 Formation</span>
+                    <h3>Formation En Ligne - Débutant</h3>
+                    <p>Formation complète en vidéo pour les débutants en marketing relationnel.</p>
+                    <span class="prix">25 000 FCFA</span>
+                    <a href="https://wa.me/237689085020?text=Je veux m'inscrire: Formation Débutant" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+                </div>
+            </div>
+            <div class="carte-produit" data-cat="formations">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400" alt="Masterclass">
+                <div class="produit-info">
+                    <span class="badge">🎓 Masterclass</span>
+                    <h3>Masterclass Leadership</h3>
+                    <p>Devenez un leader charismatique et inspirez votre équipe.</p>
+                    <span class="prix">75 000 FCFA</span>
+                    <a href="https://wa.me/237689085020?text=Je veux m'inscrire: Masterclass Leadership" class="btn btn-whatsapp" target="_blank">S'inscrire</a>
+                </div>
+            </div>
+            <div class="carte-produit" data-cat="outils">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Kit Marketing">
+                <div class="produit-info">
+                    <span class="badge">🛠️ Outil</span>
+                    <h3>Kit Marketing Complet</h3>
+                    <p>Templates, scripts de vente et outils prêts à utiliser.</p>
+                    <span class="prix">30 000 FCFA</span>
+                    <a href="https://wa.me/237689085020?text=Je veux commander: Kit Marketing Complet" class="btn btn-whatsapp" target="_blank">Commander</a>
+                </div>
+            </div>
+            <div class="carte-produit" data-cat="outils">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400" alt="Coaching">
+                <div class="produit-info">
+                    <span class="badge">⭐ Premium</span>
+                    <h3>Coaching Personnalisé 1h</h3>
+                    <p>Session de coaching individuel avec Rodrigue DOULGUE.</p>
+                    <span class="prix">50 000 FCFA</span>
+                    <a href="https://wa.me/237689085020?text=Je veux réserver: Coaching Personnalisé" class="btn btn-whatsapp" target="_blank">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>Rodrigue DOULGUE</h3>
+            <p>Expert en Marketing Relationnel</p>
+        </div>
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <a href="index.html">Accueil</a>
+            <a href="boutique.html">Boutique</a>
+            <a href="formations.html">Formations</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <a href="https://wa.me/237689085020">📱 +237 689 085 020</a>
+            <a href="mailto:roidedieu89@gmail.com">📧 roidedieu89@gmail.com</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Rodrigue DOULGUE. Tous droits réservés.</p>
+    </div>
+</footer>
+<a href="https://wa.me/237689085020" class="whatsapp-float" target="_blank">📱 WhatsApp</a>
+<script>
+function filtrer(cat) {
+    document.querySelectorAll('.filtre-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    document.querySelectorAll('.carte-produit').forEach(p => {
+        if (cat === 'tous' || p.dataset.cat === cat) {
+            p.style.display = 'block';
+        } else {
+            p.style.display = 'none';
+        }
+    });
+}
+</script>
+</body>
+</html>
